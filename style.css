@@ -1,0 +1,93 @@
+
+h2 {
+  color: darkgreen;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 20px;
+  background-color: #ccc;
+  /* font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 20px;
+  background-image: url("/tobias-van-schneider-DjCo6_Rr4nE-unsplash.jpg"); /* Replace "background-image.jpg" with your actual background image file path */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed */
+
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 200px;
+}
+
+.card img {
+  width: 100%;
+  max-height: 200px;
+}
+
+.card h3 {
+  margin-top: 10px;
+}
+
+.card p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.add-to-cart {
+  padding: 8px 15px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.add-to-cart:hover {
+  background-color: #0056b3;
+}
+
+.cart-container {
+  margin-top: 30px;
+  /* font-size: 14px; */
+}
+
+.cart-items {
+  border: 1px solid #ccc;
+  padding: 10px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.cart-items div {
+  margin-bottom: 5px;
+}
+
+
+.remove-button {
+  padding: 5px 10px;
+  background-color: #dc3545;  
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+  border-radius: 4px;
+  margin-left: 10px;
+}
+
+.remove-button:hover {
+  background-color: #c82333;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  
+<h2>Hi, this is my online shop!</h2>
+
+  <div class="container">
+    <div class="card">
+      <img src="michael-wright-esD7TEjvZWA-unsplash.jpg" alt="Socks">
+      <h3>Socks</h3>
+      <p>Price: €5</p>
+      <button class="add-to-cart" data-item="socks" data-price="10">Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <img src="keagan-henman-Won79_9oUEk-unsplash.jpg" alt="T-Shirt">
+      <h3>T-Shirt</h3>
+      <p>Price: €25</p>
+      <button class="add-to-cart" data-item="T-shirt" data-price="20">Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <img src="engin-akyurt-Hd4nlxLgIbA-unsplash.jpg" alt="Shorts">
+      <h3>Shorts</h3>
+      <p>Price: €50</p>
+      <button class="add-to-cart" data-item="shorts" data-price="25">Add to Cart</button>
+    </div>
+  </div>
+  <div class="cart-container">
+    <h2>This is in your shopping basket :</h2>
+    <div class="cart-items" id="cartItems">
+    </div>
+  </div>
+////////////
+
+
+<div class="payment-options">
+  <h3>Payment Options:</h3>
+ 
+  <button class="pay-credit" onclick="showCreditCardForm()">Pay by Credit Card</button>
+  <button class="apply-discount" onclick="applyDiscount()">Apply Discount</button>
+</div>
+
+
+<div class="credit-card-form" id="creditCardForm">
+  <h2>Enter Credit Card Details:</h2>
+  <form onsubmit="payByCreditCard(event)">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    <label for="creditCardNumber">Credit Card Number:</label>
+    <input type="text" id="creditCardNumber" name="creditCardNumber" required><br>
+    <br>
+    <button type="submit">Pay Now</button>
+  </form>
+</div>
+
+
+
+  
+
+
+
+
+
+  <script src="index.js"></script>
+  
+</body>
+</html>
